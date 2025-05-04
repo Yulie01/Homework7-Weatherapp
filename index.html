@@ -12,21 +12,26 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city.." required/>
-            <input type="submit" value="search"/>
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city.." required class="search-form-input"/>
+            <input type="submit" value="Search" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-    <h1>New York</h1>
-    <p>
+    <h1 class="weather-app-city">New York</h1>
+    <p class="weather-app-details">
         Thursday 14:56, scattered clouds
         <br/>
-        Humidity: 66%, Wind : 3.13km/h
+        Humidity: <strong>66%</strong>, Wind : <strong>3.13km/h</strong>
     </p>
 </div>
-   <div>🌤️15°C </div>
+   <div class="weather-app-temperature-container">
+    <div class="weather-app-icon">🌤️</div>
+    <div class="weather-app-temperature">15</div>
+    <div class="weather-app-unit">°C</div>
+   </div>
     </main>
     <footer>This project was coded by
     <a href="https://github.com/Yulie01/"target="_blank"> Yulie </a> Code Hosted <a href="https://github.com/Yulie01/Homework7-Weatherapp" target="_blank">on Github</a> and Website Hosted <a href="https://homework-weather-app.netlify.app/" target="-blank">on Netlify</a>
